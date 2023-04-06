@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:rgb(15, 15, 600)  url(https://c0.wallpaperflare.com/preview/176/986/481/a-dark-blue-sky-with-a-lunar-eclipse.jpg) ;
+    background-blend-mode: darken;
+    background-size: cover;
+}
+.astronauta-img{
+    justify-content: center;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.astronauta-img img{
+    justify-content: center;
+    text-align: center;
+    width: 20%; 
+    animation: entrada,flutuar 10s ease-out infinite;;
+
+}
+
+.astronauta-img h1{
+    font-size: 55px;
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: -10px;
+    animation: entrada 1.0s ease-in-out forwards;
+    font-family: 'Satisfy', cursive;
+
+}
+ @keyframes entrada{
+   0%{
+    transform:translateY(10px);
+    color: rgb(0, 0, 0);
+   }
+   100%{
+    transform: translateY(-10px);
+   }
+ }
+
+@keyframes flutuar{
+    0%{
+      transform: translateY(-0px);
+      
+    }
+    25%{ 
+      transform: translateY(-20px);
+    }
+    50%{
+    transform: translateY(20px);
+    }
+    100%{
+       transform: translateY(-0px);
+    }
+}
+.texto p,p1{
+    color: white;
+    font-size: 25px;
+    line-height: 2;
+    animation: entrada 1.0s ease-in-out forwards;
+    margin-top: 100px;
+
+}
+.texto p1{
+    color: skyblue;
+    font-size: 20px;
+    text-align: left;
+    margin-left: -390px;
+
+}
+.sociais{
+    margin-top: 100px;
+
+}
+.sociais a{
+    color: white;
+    font-size: 30px;
+    padding: 3rem;
+    margin-left: 20px;
+    border-color: aliceblue;
+    border-style: solid;
+    padding: 1rem 2rem;
+    animation: entrada 1.0s ease-in-out forwards;
+}
+.sociais a:hover{
+    background-color: blue;
+}
+.texto h2{
+    color: white;
+    text-align: center;
+     font-size: 25px;
+     margin-top: 50px;
+     font-family: monospace;
+     font-weight: 700;
+     animation: entrada 1.0s ease-in-out forwards;
+}
+.texto span{
+    color: blue;
+    animation: piscar 10s ease infinite;
+}
+@keyframes piscar{
+     0%{
+      color: aliceblue;
+     }
+     50%{
+         color: red;
+     }
+     100%{
+        color: blue;
+     }
+}
+
+form{
+
+     margin-top: 100px;
+     text-align: left;
+     margin-left:400px;
+}
+input{
+    flex-direction: column;
+    border-radius: 10px;
+
+
+}
+#name,#email,#text{
+    flex-direction: column;
+    
+}
+#name{
+    width: 350px;
+    height: 36px;
+    text-align: left;
+    padding: 1rem;
+}
+#email{
+    width: 350px;
+    height: 40px;
+    text-align: left;
+    padding: 1rem;
+}
+
+#text{
+    width: 350px;
+    height: 80px;  
+    border-radius: 5px;
+    text-align: left;
+    padding: 1rem;
+}
+#enviar{
+    color: aliceblue;
+    width: 200px;
+    height: 20px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1.5rem;
+     background-color:rgba(0, 0, 255, 0.616);
+}
+form h2{
+    color: white;
+    line-height: 2;
+    font-weight: 900;
+}
+.planetas{
+    display: flex;
+    margin-top: 200px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.planeta-1 img{
+    animation: none;
+    margin-left: -50px;
+    border-color: blue;
+    border-style: solid;
+    width: 50%;
+}
+.planeta-1 img:hover{
+    animation:flutuar-img 2s ease forwards ;
+    filter: blur(2px);
+}
+   @keyframes flutuar-img{
+    0%{
+        transform: translateY(-2px);
+    }
+   }
+
+.planeta-2{
+    margin-top: 50px;
+}
+.planetas h1{
+    text-align: center;
+    margin-left: -50px;
+}
+.planetas span{
+    color: blue;
+}
+footer{
+    margin-top: 260px;
+    padding: 1rem;
+  }
+  footer h2{
+    font-size: 30px;
+    color: white;
+   font-family: 'Courier New', Courier, monospace;
+   }
+
+   footer a{
+    color: blue;
+    
+     text-decoration: none;
+   }
+   footer a:hover{
+    text-decoration: underline;
+   }
+
+@media(min-width:375px) and (max-width:450px){
+     .astronauta-img img{ 
+         text-align: center;
+         width: 50%;
+     }
+     .texto p{
+        width: 100%;
+        text-align: left;
+        margin-left: 10px;
+        font-size: 22px;
+     }
+     .texto p1{
+        text-align: left;
+        margin-left: -130px;
+     }
+     .texto h2{
+        text-align: center;
+     }
+     .sociais{
+        margin-left: -20px;
+     }
+     .planetas{
+        text-align: center;
+
+     }
+     .planetas img{
+        margin-left: -30px;
+        width: 80%;
+        justify-content: center;
+     }
+     .planeta-1 h1{
+        text-align: center;
+        font-size: 35px;
+        margin-left: 10px;
+     }
+
+
+}
+@media(min-width:450px) and (max-width:750px){
+    .astronauta-img img{ 
+        text-align: center;
+        width: 50%;
+    }
+    .texto p{
+       width: 100%;
+       text-align: left;
+       margin-left: 10px;
+       font-size: 22px;
+    }
+    .texto p1{
+       text-align: left;
+       margin-left: -130px;
+    }
+    .texto h2{
+       text-align: center;
+    }
+    .sociais{
+       margin-left: -20px;
+    }
+    .planetas{
+       text-align: center;
+
+    }
+    .planetas img{
+       margin-left: -30px;
+       width: 80%;
+       justify-content: center;
+    }
+    .planeta-1 h1{
+       text-align: center;
+       font-size: 35px;
+       margin-left: 10px;
+    }
+
+}
+@media(min-width:750px) and (max-width:1040px){
+    .astronauta-img img{ 
+        text-align: center;
+        width: 50%;
+    }
+    .texto p{
+       width: 100%;
+       text-align: left;
+       margin-left: 50px;
+       font-size: 25px;
+    }
+    .texto p1{
+       text-align: left;
+       margin-left: -400px;
+    }
+    .texto h2{
+       text-align: center;
+    }
+    .sociais{
+       margin-left: -20px;
+    }
+    .planetas{
+       text-align: center;
+
+    }
+    .planetas img{
+       margin-left: -30px;
+       width: 80%;
+       justify-content: center;
+    }
+    .planeta-1 h1{
+       text-align: center;
+       font-size: 35px;
+       margin-left: 10px;
+    }
+
+}

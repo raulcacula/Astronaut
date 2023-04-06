@@ -1,0 +1,715 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  background:rgb(15, 15, 60) url(https://img.freepik.com/vetores-gratis/design-de-banner-de-fundo-profissional-de-negocios-abstrato-multiuso_1340-16864.jpg?w=360);
+background-blend-mode: darken;
+  background-size: cover;
+}
+.center{
+  max-width: 960px;
+  padding: 0 2%;
+  margin: 0 auto;
+  display: flex;
+    
+}
+.menu-mobile,.logo-mobile{
+  display: none;
+}
+
+
+header{
+  color: aliceblue;
+  padding: 1.5rem;
+}
+header a{
+  color: white;
+  list-style: none;
+}
+.logo h1{
+  font-size: 20px;
+  font-family: 'Satisfy', cursive;
+}
+.logo h1:hover{
+  animation: animo 2s ease-out forwards;
+}
+@keyframes animo{
+  0%{
+    transform: translateX(-0px);
+  }
+  50%{
+    transform: translateX(10px);
+  }
+  100%{
+     transform: translateX(0px);
+  }
+}
+
+
+ul{
+  margin-left: 100px;
+  list-style: none;
+  display: flex;
+}
+.menu-desktop a{
+  margin-left: 50px;
+  text-decoration: none;
+}
+.home a {
+   margin-left: 300px;
+}
+.read a{
+  margin-left: 100px;
+  background-color: blue;
+  padding: 0.7rem;
+  border-radius: 5px;
+}
+
+.logo a{
+  color: white;
+}
+.inicio img{
+    width: 25%;
+    margin-left: 850px;
+    margin-top: 100px;
+    animation: flutuar 10s ease-out infinite;
+
+}
+@keyframes flutuar{
+    0%{
+      transform: translateY(-0px);
+    }
+    25%{ 
+      transform: translateY(-20px);
+    }
+    50%{
+    transform: translateY(20px);
+    }
+    100%{
+       transform: translateY(-0px);
+    }
+}
+.mobile-menu-icon{
+  display: none;
+}
+.mobile-menu{
+  display: none;
+}
+.menu-mobile{
+  display: none;
+}
+ @media screen and (max-width:1000px){
+  .menu-desktop{
+     display: none;
+  }
+   .menu-mobile{
+    display: flex;
+   }
+    .read{
+      text-decoration: none;
+      list-style: none;
+      margin-top: -26px;
+      text-align: center;
+      margin-left: -40px;
+      width: 100%;
+    }
+    .read a{
+      text-decoration: none;
+    }
+  header h1{
+    text-align: center !important;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    width: 100%;
+  }
+
+ }
+.titulo{
+  color: white;
+  text-align: center;
+  margin-top: 250px;
+}
+span{
+  color: red;
+}
+.texto{
+  color: white;
+  text-align:justify;
+  flex-direction: column;
+ margin-left: 200px;
+}
+.texto-one{
+  margin-top: 100px;
+  margin-left: 200px;
+  line-height: 1.5;
+}
+.texto-one a{
+  text-decoration: none;
+  color: red;
+}
+.texto h1{
+  font-family: 'Satisfy', cursive;
+  font-size: 20px;
+}
+.texto i{
+  font-size: 30px;
+  line-height: 2.0;
+}
+.texto-thue{
+  margin-top: -165px;
+  text-align: justify;
+  margin-left: 550px;
+  line-height: 1.5;
+}
+.texto-thue a{
+   color:red ;
+   text-decoration: none;
+}
+.assinar-img  img{
+  width: 100%;
+  height: 200px;
+  box-shadow: 0 15px 30px rgb(13, 4, 37);
+}
+.assinar{
+  text-align: center;
+  justify-content: center;
+
+}
+
+.assinar img{
+  width: 150px;
+  height: 150px;
+  border-style: solid;  
+  margin-left: -400px;
+  border-radius: 15px;
+  margin-top: 100px;
+}
+.assinar img:hover{
+  filter: opacity(50%);
+}
+.assinar h1,.assinar a{
+  color: white;
+  margin-left: -400px;
+  line-height: 2.0;
+}
+.assinar h1{
+  font-family: monospace;
+  font-size: 20px;
+}
+.assinar a{
+  text-decoration: none;
+  font-family:sans-serif;
+}
+.assinar a{
+  background-color: red;
+  padding: 0.5rem 0.5rem;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+.assinar-thue{
+  text-align: center;
+  margin-left: 700px;
+}
+.assinar a:hover{
+  color: red;
+  background-color: white;
+}
+.assinar-thue img{
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    margin-top: -500px ;
+}
+.assinar img:hover{
+  animation:zoom 0.1s ease-out forwards;
+}
+@keyframes zoom{
+
+  100%{
+  transform: scale(1.1);
+  }
+}
+.assinar p{
+  color: white;
+  text-align: left;
+  margin-top: -200px;
+  margin-left: 600px;
+  line-height: 1.5;
+  font-size: 18px;
+
+}
+.buy-thue img{
+   margin-top: 200px;
+    
+}
+.buy-thue a{
+  background-color: red;
+  padding: 0.5rem 0.5rem;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+.background{
+  background:rgb(15, 15, 600) url(https://images.pexels.com/photos/813269/pexels-photo-813269.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+   background-size: cover;
+  background-blend-mode: darken;
+  margin-top: 250px;
+  text-align: center;
+  line-height: 2.0;
+}
+.background img{
+  margin-top: 250px;
+  width: 100%;
+}
+.background h2{
+  color: white;
+  text-align: center;
+  font-size: 35px;
+  font-family: 'Press Start 2P', cursive;
+}
+.background a{
+  color: white;
+   text-decoration: none;
+   font-size: 24px;
+}
+.marte img{ 
+   width: 20%;
+   margin-left: -700px;
+   animation: marte-animation 15s ease-out infinite;
+ 
+}
+@keyframes marte-animation{
+  0%{
+       transform: translateY(-0px);
+       transform: translateX(20px);
+  }
+  50%{   
+    transform: translateY(20px);
+    
+  }
+  100%{
+    transform: translateY(0px);
+    transform: translateX(20px);
+  }
+}
+.marte{
+  margin-top: -50px;
+}
+.marte h1,.marte p{
+  margin-top: -250px;
+  margin-left: 100px;
+}
+.marte .fa-regular{
+  color: white;
+}
+.marte h1{
+  color: white;
+}
+.marte p{
+  color: white;
+  margin-top: -2px;
+  text-align: left;
+  margin-left: 620px;
+  font-size: 22px;
+}
+.marte h2,p1{
+  margin-left: -650px;
+  margin-top: 70px;
+}
+.marte p1{
+  color: white;
+}
+.marte h2{
+  font-size: 17px;
+}
+.marte h3,p2{
+  margin-left:20px;
+  color: white;
+  margin-top: -70px;
+}
+.marte h3 span{
+  color: yellow;
+  box-shadow: 0 15px 30px rgb(68, 0, 255);
+}
+.marte h4,p3{
+  color: white;
+  margin-left: 550px;
+  margin-top: -65px;
+}
+.rocket{
+  margin-top: -100px;
+}
+.rocket img{
+  width: 30%;
+  margin-left: 370px;
+}
+.rocket h1{
+  color: white;
+  margin-top: -335px;
+  text-align: left;
+   margin-left: 250px;
+}
+.rocket p{
+  color: white;
+   text-align: left;
+   font-size: 22px;
+   margin-left: 250px;
+   font-family:sans-serif ;
+}
+.rocket  h1 span{
+  color: blue;
+  
+}
+footer{
+  margin-top: 260px;
+}
+footer h1{
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+ footer a{
+  color: blue;
+  
+   text-decoration: none;
+ }
+ footer a:hover{
+  text-decoration: underline;
+ }
+ @media(min-width:375px) and (max-width:450px){
+     .titulo h2{
+      text-align: center;
+     }
+     .texto-one{
+      text-align: center;
+      font-size: 30px;
+      margin-left: -100px; 
+      width: 100%;
+    }
+    .texto-thue{
+      margin-top: 100px;
+      text-align: center;
+      font-size: 30px;
+      margin-left: -100px; 
+      width: 100%;
+    }
+    .assinar{
+      text-align: center;
+      width: 100%;
+      margin-left: 200px;
+    }
+    .assinar p{
+      font-size: 20px;
+      margin-top: 30px;
+      margin-left: -170px;
+      text-align: justify;
+      width: 100%;
+    }
+    .buy-thue{
+      text-align: center;
+      width: 100%;
+      margin-left: 2px;
+       margin-top: -100px;
+    }
+    .buy-thue p{
+      font-size: 20px;
+      margin-top: 30px;
+      margin-left: -150px;
+      text-align: justify;
+      width: 100%;
+    }
+    .marte img{
+      width: 90%;
+      justify-content: center;
+      margin-left: 0px;
+      margin-top: 100px;
+    }
+    .marte h1{
+      margin-top:50px;
+      width: 100%;
+      text-align: center;
+      margin-left: 7px;
+    }
+    .marte p{
+      font-size: 20px;
+      margin-top: 30px;
+      margin-left: 19px;
+      text-align: justify;
+      width: 100%;
+    }
+    .marte h2{
+      width: 100%;
+      text-align: center;
+      margin-left: 1px;
+      font-size: 22px;
+    }
+    .marte p1{
+     text-align: center;
+     width: 100%;
+     font-size: 22px;
+     margin-left: 1px;
+    }
+    .marte h3,p2{
+      margin-top: 100px;
+      font-size: 22px;
+      text-align: center;
+      width: 100%;
+      margin-left: -1px;
+    }
+    .marte h4,p3{
+      text-align:center;
+      width: 100%;
+      margin-left: -1px;
+      font-size: 22px;
+      margin-top: 100px;
+    }
+    .rocket{
+      margin-top: -100px;
+      
+    }
+    .rocket img{
+      width: 100%;
+      margin-left: -10px;
+    }
+    .rocket h1{
+      text-align:center;
+      width: 100%;
+      line-height: 2;
+      margin-top: 50px;
+      margin-left: -1px;
+    }
+    .rocket p{
+      text-align: left;
+      width: 80%;
+      font-size:22px;
+      margin-left: 50px;
+  }
+}
+@media(min-width:450px) and (max-width:750px){
+  .titulo h2{
+    text-align: center;
+   }
+   .texto-one{
+    text-align: center;
+    font-size: 30px;
+    margin-left: -100px; 
+    width: 100%;
+  }
+  .texto-thue{
+    margin-top: 100px;
+    text-align: center;
+    font-size: 30px;
+    margin-left: -100px; 
+    width: 100%;
+  }
+  .assinar{
+    text-align: center;
+    width: 100%;
+    margin-left: 200px;
+  }
+  .assinar p{
+    font-size: 22px;
+    margin-top: 30px;
+    margin-left: -130px;
+    text-align: left;
+    width: 100%;
+  }
+  .buy-thue{
+    text-align: center;
+    width: 100%;
+    margin-left: 2px;
+     margin-top: -100px;
+  }
+  .buy-thue p{
+    font-size: 22px;
+    margin-top: 30px;
+    margin-left: -130px;
+    text-align: left;
+    width: 100%;
+  }
+  .background h2{
+    margin-top: -100px;
+  }
+  .marte img{
+    width: 90%;
+    justify-content: center;
+    margin-left: 0px;
+    margin-top: 50px;
+  }
+  .marte h1{
+    margin-top:50px;
+    width: 100%;
+    text-align: center;
+    margin-left: 7px;
+  }
+  .marte p{
+    font-size: 22px;
+    margin-top: 30px;
+    margin-left: 50px;
+    text-align: justify;
+    width: 100%;
+  }
+  .marte h2{
+    width: 100%;
+    text-align: center;
+    margin-left: 1px;
+    font-size: 22px;
+    margin-top: 15px;
+  }
+  .marte p1{
+   text-align: center;
+   width: 100%;
+   font-size: 22px;
+   margin-left: 1px;
+  }
+  .marte h3,p2{
+    margin-top: 100px;
+    font-size: 22px;
+    text-align: center;
+    width: 100%;
+    margin-left: -1px;
+  }
+  .marte h4,p3{
+    text-align:center;
+    width: 100%;
+    margin-left: -1px;
+    font-size: 22px;
+    margin-top: 100px;
+  }
+  .rocket{
+    margin-top: -100px;
+    
+  }
+  .rocket img{
+    width: 100%;
+    margin-left: -10px;
+  }
+  .rocket h1{
+    text-align:center;
+    width: 100%;
+    line-height: 2;
+    margin-top: 50px;
+    margin-left: -1px;
+  }
+  .rocket p{
+    text-align: left;
+    width: 80%;
+    font-size:22px;
+    margin-left: 50px;
+}
+}
+@media(min-width:750px) and (max-width:1040px){
+  .titulo h2{
+    text-align: center;
+   }
+   .texto-one{
+    text-align: center;
+    font-size: 30px;
+    margin-left: -100px; 
+    width: 100%;
+  }
+  .texto-thue{
+    margin-top: 100px;
+    text-align: center;
+    font-size: 30px;
+    margin-left: -100px; 
+    width: 100%;
+  }
+  .assinar{
+    text-align: center;
+    width: 100%;
+    margin-left: 200px;
+  }
+  .assinar p{
+    font-size: 26px;
+    margin-top: 30px;
+    margin-left: -50px;
+    text-align: left;
+    width: 100%;
+  }
+  .buy-thue{
+    text-align: center;
+    width: 100%;
+    margin-left: 2px;
+     margin-top: -100px;
+  }
+  .buy-thue p{
+    font-size: 26px;
+    margin-top: 30px;
+    margin-left: -50px;
+    text-align: left;
+    width: 100%;
+  }
+  .background h2{
+    margin-top: -100px;
+  }
+  .marte img{
+    width: 90%;
+    justify-content: center;
+    margin-left: 0px;
+    margin-top: 50px;
+  }
+  .marte h1{
+    margin-top:50px;
+    width: 100%;
+    text-align: center;
+    margin-left: 7px;
+  }
+  .marte p{
+    font-size: 26px;
+    margin-top: 30px;
+    margin-left: 180px;
+    text-align: justify;
+    width: 100%;
+  }
+  .marte h2{
+    width: 100%;
+    text-align: center;
+    margin-left: 1px;
+    font-size: 22px;
+    margin-top: 15px;
+  }
+  .marte p1{
+   text-align: center;
+   width: 100%;
+   font-size: 22px;
+   margin-left: 1px;
+  }
+  .marte h3,p2{
+    margin-top: 100px;
+    font-size: 22px;
+    text-align: center;
+    width: 100%;
+    margin-left: -1px;
+  }
+  .marte h4,p3{
+    text-align:center;
+    width: 100%;
+    margin-left: -1px;
+    font-size: 22px;
+    margin-top: 100px;
+  }
+  .rocket{
+    margin-top: -100px;
+    
+  }
+  .rocket img{
+    width: 100%;
+    margin-left: -10px;
+  }
+  .rocket h1{
+    text-align:center;
+    width: 100%;
+    line-height: 2;
+    margin-top: 50px;
+    margin-left: -1px;
+  }
+  .rocket p{
+    text-align: left;
+    width: 80%;
+    font-size:22px;
+    margin-left: 150px;
+}
+}

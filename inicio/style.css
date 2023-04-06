@@ -1,0 +1,703 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    background: rgb(15, 15, 70)  url(http://eskipaper.com/images/star-wallpaper-5.jpg);
+
+    background-blend-mode: darken;
+    background-size: cover;
+  }
+.background-estrela{
+  background: rgb(15, 15, 80)  url(http://eskipaper.com/images/star-wallpaper-5.jpg);
+  opacity: 0.9;
+ 
+  background-blend-mode: darken;
+  background-size: cover;
+  
+}
+.center{
+  max-width: 960px;
+  padding: 0 2%;
+  margin: 0 auto;
+  display: flex;
+    
+}
+.menu-mobile,.logo-mobile{
+  display: none;
+}
+
+
+header{
+  color: aliceblue;
+  padding: 1.5rem;
+}
+header a{
+  color: white;
+  list-style: none;
+}
+.logo h1{
+  font-size: 20px;
+  font-family: 'Satisfy', cursive;
+}
+.logo h1:hover{
+  animation: animo 2s ease-out forwards;
+}
+@keyframes animo{
+  0%{
+    transform: translateX(-0px);
+  }
+  50%{
+    transform: translateX(10px);
+  }
+  100%{
+     transform: translateX(0px);
+  }
+}
+
+
+ul{
+  margin-left: 100px;
+  list-style: none;
+  display: flex;
+}
+.menu-desktop a{
+  margin-left: 50px;
+  text-decoration: none;
+}
+.home a {
+   margin-left: 300px;
+}
+.read a{
+  margin-left: 400px;
+  background-color: blue;
+  padding: 0.7rem;
+  border-radius: 5px;
+}
+
+.logo a{
+  color: white;
+}
+.inicio img{
+    width: 25%;
+    margin-left: 850px;
+    margin-top: 100px;
+    animation: flutuar 10s ease-out infinite;
+
+}
+@keyframes flutuar{
+    0%{
+      transform: translateY(-0px);
+    }
+    25%{ 
+      transform: translateY(-20px);
+    }
+    50%{
+    transform: translateY(20px);
+    }
+    100%{
+       transform: translateY(-0px);
+    }
+}
+.mobile-menu-icon{
+  display: none;
+}
+.mobile-menu{
+  display: none;
+}
+ @media screen and (max-width:1000px){
+  .menu-desktop{
+     display: none;
+  }
+  header h1{
+    text-align: center !important;
+    align-items: center;
+    justify-content: center;
+    margin-left: 300px;
+  }
+  .menu-mobile{
+    display: flex;
+   }
+    .read{
+      list-style: none;
+      margin-top: -26px;
+      text-align: right;
+      margin-left: -40px;
+      width: 100%;
+      text-align: center;
+    }
+    .read a{
+      text-decoration: none;
+    }
+
+ }
+.texto{
+    color: white;
+    margin-left: 150px;
+    margin-top: -10px;
+    font-size: 25px;
+}
+.texto a{
+    color:white;
+    text-decoration: none;
+    background-color: rgb(0, 0, 139);
+    padding: 1rem;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+.texto a:hover{
+    color: darkblue;
+    background-color: aliceblue;
+}
+.texto p{
+  color:cornflowerblue;
+}
+.inicio, .texto{
+  margin-top: -10px;
+}
+.texto{
+  margin-top: -250px;
+}
+.cubo{
+   margin-top: 250px;
+   justify-content: center;
+   text-align: center;
+
+}
+.cubo img{
+  margin-left: -700px;
+  width: 20%;
+  animation: foquete  5s ease-in-out infinite;
+}
+@keyframes foquete{
+  0%{
+    transform: translateX(-0px);
+  }
+  50%{
+    transform: translateX(20px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
+
+.cubo h2,p2{
+  color: white;
+  margin-top: -300px;
+  margin-left: 210px;
+  font-family:'Yanone Kaffeesatz', sans-serif;
+  font-size: 30px;
+}
+.cubo p2{
+  font-family: 'Amatic SC', cursive;
+  line-height: 2.0;
+  color:#a44cd3;
+
+}
+.cubo h2{
+  margin-left: 230px;
+
+}
+.cubo p3{
+  color: white;
+  display: flex;
+   margin-left: 700px;
+   line-height: 1.0;
+   font-size: 22px;
+   text-align: left;
+   font-family: 'Alegreya Sans SC', sans-serif;
+}
+p3::selection{
+  background-color: darkblue;
+}
+.cubo P{
+  line-height: 4.0;
+  text-decoration: none;
+     text-align: left;
+  color: white;
+  margin-left: 900px;
+  border-radius: 5px;
+  transition: 0.5s;
+  font-size: 22px;
+}
+.cubo a:hover{
+  color: black;
+  background-color: aliceblue;
+}
+.planeta{
+  margin-top: 300px;
+}
+.container h3{
+  color: #A44cd3;
+  margin-top: -500px;
+  margin-left: 200px;
+  line-height: 4.0;
+  font-size: 30px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: url(https://i0.wp.com/multarte.com.br/wp-content/uploads/2018/12/azul-claro21.jpg?w=2088&ssl=1);
+  animation: texto 7s steps(110,end) forwards;
+  white-space: nowrap;
+  border-right: 1px solid;
+}
+@keyframes texto{
+0%{
+ width:0;
+ border-color: transparent;
+}
+50%{
+ border-color: #fff;
+}
+100%{
+ width: 100%;
+ border-color: transparent;
+}
+
+}
+.planeta img{
+  text-align: right;
+  justify-content: center;
+  width: 50%;
+  margin-left: 550px;
+}
+
+.loader{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+  margin-left: 300px;
+}
+.loader h2{
+  font-family: monospace;
+  font-size: 30px;
+  font-weight:500;
+  color: #fff;
+}
+.loader span{
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid lime;
+  pointer-events: none;
+  animation: animate 3s linear infinite;
+
+}
+.loader h2:hover{
+   color: limegreen;
+}
+@keyframes animate{
+   0%{
+      transform: rotate(0deg);
+   }
+   0%{
+     transform: rotate(360deg);
+   }
+}
+.texto-thue h3{
+  color: #fff;
+  font-family: 'Anton', sans-serif;
+margin-left: 800px;
+  margin-top: -200px;
+}
+.texto-thue a{
+  font-family: 'Rubik Mono One', sans-serif;
+  color: lime;
+  margin-left:800px;
+  line-height: 10.0;
+  text-decoration: none;
+   border-color: lime;
+   border-style: solid;
+  padding: 1.2rem 3rem;
+  border-radius: 5px;
+  
+}
+.texto-thue a:hover{
+ border-color: #fff;
+
+}
+
+ 
+.back-texto{
+  margin-top: 200px;
+}
+.back-texto img{
+  
+  justify-content: center;
+  width: 800px;
+  height: 90%;
+  text-align: center;
+  margin-left: 500px;
+  border-radius: 100px;
+  box-shadow: 0 15px 30px rgb(0, 0, 139);
+}
+.back-texto h2{
+  color: white; 
+  margin-left: 200px;
+  font-size: 30px;
+  border-bottom: 100px;
+  font-family: 'Rubik Mono One', sans-serif;
+  margin-top: -300px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: url(https://i0.wp.com/multarte.com.br/wp-content/uploads/2018/12/azul-claro27.jpg?fit=612%2C408&ssl=1);
+}
+input{
+  margin: 20px;
+  width: 200px;
+  height: 40px;
+  
+}
+.back-texto input{
+  box-shadow: 0 15px 30px rgb(0, 0, 139);
+  text-align: center;
+  margin-left: 200px;
+  border-radius: 5px;
+}
+#text{
+  color: blue;
+}
+#text:hover{
+  border-color: rgb(0, 0, 255);
+  border-style: solid;
+}
+#enviar{
+  color: white;
+  background-color: #A44cd3;
+}
+#enviar:hover{
+  border-color: white;
+  border-style: solid;
+}
+
+footer{
+  margin-top: 300px;
+  display:block;
+  text-align: center;
+  background-color: rgba(0, 0, 139, 0.315);
+  padding: 2rem 2rem;
+}
+footer a{
+  color: white;
+  padding: 3rem;
+  font-size: 25px;
+  font-family: 'Satisfy', cursive;
+}
+footer .fa-brands:hover{
+  animation: sociais 2s ease-in-out forwards;
+  color:rgb(121, 121, 189) ;;
+}
+@keyframes sociais{
+  0%{
+   transform: translate(-0px)
+  }
+  50%{
+      transform: translate(3px);
+  }
+  100%{
+    transform: translate(0px);
+  }
+}
+
+.footer-texto a{
+  font-size: 17px;
+   margin-left: 50px;
+   text-decoration: none;
+   line-height: 6.0;
+   transition: 0.5s;
+}
+.footer-texto a:hover{
+  text-decoration: underline;
+  color:rgb(121, 121, 189) ;
+}
+
+@media(min-width:375px) and (max-width:450px){
+  header h1{
+    text-align: center !important;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+  }
+    .inicio img{
+    margin-left: 100px;
+    width: 50%;
+    
+    }
+    .texto{
+      margin-top: 100px;
+      text-align: left;
+      margin-left: 30px;
+    }
+    .cubo img{
+      width: 50%;
+      margin-left: 20px;
+      margin-top: -200px;
+    }
+    .cubo h2,p2,p3,a{
+      margin-top: 100px;
+      margin-left: 30px;
+      text-align: left;
+    }
+    .cubo p2{
+      margin-left: -220px;
+    }
+    .cubo p3{
+      margin-top: 20px;
+      margin-left: 30px;
+      text-align: left;
+    }
+    .cubo p{
+      margin-left: 30px;
+
+    }
+    .planeta img{
+      width: 70%;
+      margin-left: 70px;
+      margin-top: -200px;
+    }
+    .container{
+      margin-top: 500px;
+      margin-left: -130px;
+    }
+    .loader{
+      margin-top: 100px;
+      margin-left: 90px;
+    }
+
+    .texto-thue h3{ 
+      color: white;
+      text-align: center;
+    }
+    .texto-thue a{
+      margin-left: 80px;
+}
+     .texto-thue h3{
+  margin-left: 80px;
+  text-align: left;
+  margin-top: 100px;
+  }
+  .back-texto img{
+    width: 100%;
+    justify-content: center;
+    margin-left: 5px;
+  }
+  .back-texto form{
+    margin-left: -120px;
+   margin-top: 30px;
+  }
+  .back-texto h2{
+    margin-top: 50px;
+    margin-left: 100px;
+    font-size: 23px;
+  }
+  footer{
+    text-align: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 20px;
+
+  }
+  footer .fa-brands{
+    margin-left: -57px;
+    font-size: 30px;
+ 
+  }
+  .footer-texto {
+    text-align: center;
+     margin-left: -70px;
+  
+  }
+ 
+}
+@media(min-width:450px) and (max-width:760px){
+  .inicio img{
+    margin-left: 150px;
+    width: 40%;
+    margin-top: 50px;
+  }
+  .texto{
+    margin-top: 50px;
+    margin-left: 80px;
+    text-align: left;
+    font-size: 20px;
+  }
+  .texto a{
+    text-align:right;
+    margin-left: 200px;
+  }
+  .cubo img{
+    width: 50%;
+    margin-left: 1px;
+    margin-top: -100px;
+  }
+  .cubo h2,p2,p3,a{
+    margin-top: 30px;
+    margin-left:80px;
+    text-align: left;
+    font-size: 22px;
+  }
+  .cubo p2{
+    margin-left: -220px;
+    font-size: 22px;
+  }
+  .cubo h2{
+    font-size: 22px;
+  }
+  .cubo p3{
+    margin-top: 20px;
+    margin-left: 80px;
+    text-align: left;
+    font-size: 22px
+  }
+  .cubo p{
+    margin-left: 200px;
+}
+   .planeta img{
+    width: 70%;
+    margin-left: 60px;
+    margin-top: -200px;
+   }
+   .container {
+    margin-top: 550px;
+    margin-left: -100px;
+    font-size: 22px;
+   }
+   .container h2{
+    font-size: 22px;
+   }
+   .loader{
+    margin-left: 120px;
+   }
+   .texto-thue{
+    text-align: center;
+    margin-left:-800px;
+    margin-top: 300px;
+   }
+   .back-texto img{
+    text-align: center;
+    justify-content: center;
+    margin-left:0px;
+    width: 100%;
+   }
+   .back-texto h2{
+    text-align: center;
+    margin-top: 100px;
+    margin-left:20px;
+   }
+   form{
+    text-align: center;
+    margin-top: 50px;
+    margin-left: -170px;
+   }
+   footer{
+    text-align: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 20px;
+
+  }
+  footer .fa-brands{
+    margin-left: -100px;
+    font-size: 30px;
+ 
+  }
+  .footer-texto {
+    text-align: center;
+     margin-left: -76px;
+  
+  }
+}
+
+@media(min-width:760px) and (max-width:1040px){
+  .inicio img{
+     margin-left:450px;
+
+  }
+  .texto{
+    margin-left: 70px;
+  }
+   .cubo img{
+    margin-left:-400px ;
+    margin-top: -50px;
+
+   }
+   .cubo h2{
+    margin-top: -200px;
+
+   }
+   .cubo p2{
+    margin-left: 130px;
+    font-size: 22px;
+   }
+   .cubo p3{
+    margin-left: 420px;
+    margin-top: -1px;
+    font-size: 22px;
+   }
+   .cubo p{
+    font-size: 20px;
+    margin-left:570px;
+   }
+   .planeta img{
+    width: 70%;
+    margin-left: 130px;
+    margin-top: -100px;
+   }
+   .container{
+    margin-top: 500px;
+   }
+   .container h3{
+    font-size: 30px;
+   }
+   .loader{
+    margin-left: 120px;
+   }
+   .texto-thue{
+    margin-left: -380px;
+   }
+   .back-texto img{
+    width: 100%;
+    margin-left: 0px;
+   }
+   .back-texto h2{
+    margin-top: 200px;
+    margin-left: 200px;
+    font-size: 50px;
+   }
+   form{
+    margin-left: 20px;
+    margin-top: 10px;
+   }
+   input{
+    width: 300px;
+    height: 50px;
+   }
+   footer{
+    text-align: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 20px;
+
+  }
+  footer .fa-brands{
+    margin-left: -70px;
+    padding: 5rem;
+    font-size: 30px;
+ 
+  }
+  .footer-texto {
+    text-align: center;
+    margin-left: -100px;
+  }
+}

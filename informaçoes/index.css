@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+   background-color: black;
+
+ }
+ .texto{
+     text-align: center;
+     font-size: 25px;
+     color: aliceblue;
+     margin-top: 300px;
+
+     animation: entrada 1.5s ease-in-out forwards;
+
+ }
+  @keyframes entrada{
+    0%{
+     transform:translateY(10px);
+     color: rgb(0, 0, 0);
+    }
+    100%{
+     transform: translateY(-10px);
+    }
+  }
+   .planeta img{
+    width: 100%;
+    animation: entrada 1.5s ease-in-out forwards;
+   }
+
+
+  .func{
+    margin-top: 400px;
+     text-align: center;
+  }
+  .func a{ 
+     color: white;
+     font-size: 30px;
+      padding: 2rem;
+      background-color:aqua ;
+  }
+  .links-texto{
+    text-align: center;
+    color: aliceblue;
+    margin-top: 100px;
+    animation: entrada 1.5s ease-in-out forwards;
+  }
+  .links-texto a{
+    box-shadow: 0 15px 40px blue;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-left: 50px;
+    color: aliceblue; 
+    text-decoration: none;
+    background-color: transparent;
+    border-color: aliceblue;
+    border-style: solid;
+    padding: 0.5rem 1rem ;
+    transition: 0.5s;
+  }
+  .links-texto a:hover{
+    background-color: darkblue;
+
+  }
+  .texto-sobre p {
+      margin-top: 100px;
+      line-height: 5.0;
+  }
+   .texto-sobre a{
+    margin-top: 200px;
+   }
+   .texto-lorem{
+    margin-top: 100px;
+   }
+
+  footer{
+     text-align: center;
+     margin-top: 150px;
+     padding: 1rem;
+     font-size: 12px;
+  }
+  footer h2{
+    color: aliceblue;
+    animation: rocket 15s ease infinite;
+  }
+  @keyframes rocket{
+    0%{
+      transform: translateX(-0px);
+    }
+    25%{
+      transform: translateX(600px);
+    }
+    50%{
+      transform: translateX(-600px);
+    }
+    100%{
+      transform: translateX(0px);
+    }
+  }
+   footer h1{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   }
+   footer a{
+    color: blue;
+     text-decoration: none;
+   }
+   footer a:hover{
+    text-decoration: underline;
+   }
+   @media(min-width:375px) and (max-width:450px){
+        .texto{
+          width: 100%;
+          margin-top: 150px;
+          
+        }
+        .texto h1,h2{
+          font-size: 25px;
+        }
+        .planeta img{
+          width: 130%;
+        }
+        .links-texto a{
+          text-align: center;
+          width: 100%;
+          margin-left: 15px;
+        }
+        .texto-sobre p{
+          font-size: 18px;
+          width: 100%;
+           text-align: center;
+        }
+   }
+
+   @media(min-width:450px) and (max-width:750px){
+    .texto{
+      width: 100%;
+      margin-top: 150px;
+      
+    }
+    .texto h1,h2{
+      font-size: 25px;
+    }
+    .planeta img{
+      width: 130%;
+    }
+    .links-texto a{
+      text-align: center;
+      width: 100%;
+      margin-left: 15px;
+    }
+    .texto-sobre p{
+      font-size: 18px;
+      width: 100%;
+       text-align: center;
+    }
+   }
+
+   @media(min-width:750px) and (max-width:1040px){
+    .texto{
+      width: 100%;
+      margin-top: 150px;
+      
+    }
+    .texto h1,h2{
+      font-size: 25px;
+    }
+    .planeta img{
+      width: 130%;
+    }
+    .links-texto a{
+      text-align: center;
+      width: 100%;
+      margin-left: 15px;
+    }
+    .texto-sobre p{
+      font-size: 18px;
+      width: 100%;
+       text-align: center;
+    }
+   }

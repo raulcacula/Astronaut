@@ -1,0 +1,48 @@
+.loader{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader h2{
+  font-family: monospace;
+  font-size: 30px;
+  font-weight:500;
+  color: #fff;
+}
+.loader span{
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #fff;
+  pointer-events: none;
+  animation: animate 3s linear infinite;
+}
+@keyframes animate{
+   0%{
+      transform: rotate(0deg);
+   }
+   0%{
+     transform: rotate(360deg);
+   }
+}
+
+
+<form>
+<h2>To assess</h2>
+<input type="name" placeholder="Name" id="name">
+</br>
+</br>
+<input type="email" placeholder="E-mail" id="email">
+</br>
+</br>
+<input type="text" placeholder="Text" id="text">
+</br>
+</br>
+<input type="submit" id="enviar" value="Submit"
+onclick="enviado(); return false">
+</form>
